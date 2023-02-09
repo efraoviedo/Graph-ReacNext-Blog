@@ -18,8 +18,14 @@ const Header = () => {
         <div className="md:float-left block">
           <Link href="/">
             <span className="cursor-pointer font-bold text-4xl text-white">
-              IT Web Pages
+              Norefront Webs
             </span>
+            <p
+              className="block font-mono whitespace-nowrap
+            border-right-4 w-12 animate-pulse overflow-visible"
+            >
+              Apps Pages and WebSites...
+            </p>
           </Link>
         </div>
         <div className="hidden md:float-left md:contents">
@@ -32,6 +38,13 @@ const Header = () => {
           ))}
         </div>
       </div>
+      <span
+        className="flex items-center justify-between font-thin text-xs md:text-base
+       text-white pt-4"
+      >
+        Personalized Attention.
+        <p>Contact: Bogota Colombia. Phone:57 320 2937958</p>
+      </span>
     </div>
   );
 };

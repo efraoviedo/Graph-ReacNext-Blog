@@ -1,4 +1,3 @@
-// import Head from 'next/head';
 import { FeaturedPosts } from "../sections/index";
 import { PostCard, Categories, PostWidget } from "../components";
 import { getPosts } from "../services";
@@ -6,9 +5,6 @@ import { getPosts } from "../services";
 export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-10 mb-8">
-      {/* <Head> 
-      <title>IT Web Pages</title>
-     </Head> */}
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
@@ -23,6 +19,17 @@ export default function Home({ posts }) {
           </div>
         </div>
       </div>
+      <footer className="pt-6">
+        <span
+          className="bg-gray-900  text-white w-full h-32 
+      grid items-center justify-evenly text-xs md:text-base md:flex rounded-md"
+        >
+          Personalized Attention. {""}
+          <p>Contact: Bogota Colombia.</p>
+          <p>Phone: 57 320 2937958</p>
+          <p>Email: efraoviedo@gmail.com</p>
+        </span>
+      </footer>
     </div>
   );
 }
